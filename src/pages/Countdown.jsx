@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Countdown() {
   const navigate = useNavigate();
-  const targetDate = new Date("2026-01-31T00:00:33");
+  const targetDate = new Date("2026-02-02T00:10:00");
 
   const [timeLeft, setTimeLeft] = useState(targetDate - new Date());
   const [finished, setFinished] = useState(false);
