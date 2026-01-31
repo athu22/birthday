@@ -48,7 +48,7 @@ export default function Countdown() {
             exit={{ opacity: 0 }}
             style={styles.card}
           >
-            <h2 style={styles.title}>Time Until Sakshi’s Day 💖</h2>
+            <h2 style={styles.title}>Time Until u r Day 💖</h2>
 
             <div style={styles.watch}>
               <TimeBox label="DAYS" value={pad(days)} />
