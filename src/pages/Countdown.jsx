@@ -57,7 +57,7 @@ export default function Countdown() {
               <TimeBox label="SEC" value={pad(seconds)} />
             </div>
 
-            <p style={styles.note}>Every second brings us closer ✨</p>
+            <p style={styles.note}>Every second brings it closer ✨</p>
           </motion.div>
         ) : (
           <motion.div

@@ -36,19 +36,20 @@ export default function Landing() {
           created with love… just for you 🤍
         </motion.p>
 
+
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.96 }}
-onClick={() => {
-  window.dispatchEvent(new Event("start-music"));
-  navigate("/countdown");
-}}
-
-
+          onClick={() => {
+            console.log("Landing: Open clicked");
+            window.dispatchEvent(new Event("start-music"));
+            navigate("/countdown");
+          }}
           style={styles.button}
         >
           Open 🎁
         </motion.button>
+
       </motion.div>
 
       {/* Bottom hint */}
