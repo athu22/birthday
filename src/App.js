@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MusicPlayer from "./components/MusicPlayer";
 
-function App() {
+import Landing from "./pages/Landing";
+import Countdown from "./pages/Countdown";
+import Wish from "./pages/Wish";
+import Memories from "./pages/Memories";
+import FinalSurprise from "./pages/FinalSurprise";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* 🎵 MUSIC LIVES HERE */}
+      <MusicPlayer />
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/countdown" element={<Countdown />} />
+          <Route path="/wish" element={<Wish />} />
+          <Route path="/memories" element={<Memories />} />
+          <Route path="/final" element={<FinalSurprise />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
-
-export default App;
